@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 $sql = "CREATE TABLE images(
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     imagename VARCHAR(100) NOT NULL,
-    imagetmp BLOB NOT NULL,
+    imagetmp MEDIUMBLOB NOT NULL,
     imagetext TEXT
   )";
 if ($conn->query($sql) === TRUE) {
